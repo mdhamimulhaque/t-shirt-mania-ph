@@ -8,6 +8,7 @@ const Home = () => {
     const tShirts = useLoaderData();
     const [cart, setCart] = useState([]);
 
+    // ---> handle add to cart
     const handleAddToCart = (tShirt) => {
         const exists = cart.find(ts => ts._id === tShirt._id);
 
@@ -18,6 +19,13 @@ const Home = () => {
             setCart(newCart);
         }
     }
+
+    // ---> handle remove item
+    const handleRemoveItem = tShirt_ID => {
+        const remainingItems = cart.filter(ts => ts._id !== tShirt_ID);
+        setCart(remainingItems)
+    }
+
     return (
         <main className='main_container'>
             <section className="t_shirt_container">
@@ -32,7 +40,7 @@ const Home = () => {
 
             </section>
             <section className="cart_container">
-                <Cart cart={cart} />
+                <Cart cart={cart} handleRemoveItem={handleRemoveItem} />
             </section>
         </main>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleRemoveItem }) => {
     return (
         <div>
             <h2>Order Summery</h2>
@@ -11,7 +11,12 @@ const Cart = ({ cart }) => {
                     return (
                         <div className='cart_items_box' key={tShirt._id}>
                             <h4>{tShirt.name}</h4>
-                            <button className='remove_Item'>X</button>
+                            <button
+                                className='remove_Item'
+                                onClick={() => handleRemoveItem(tShirt._id)}
+                            >
+                                X
+                            </button>
                         </div>
                     )
                 })
