@@ -5,7 +5,7 @@
         "price": 14,
         "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
         "name": "Just Chill",
-        "gender": "Just Chill"
+        "gender": "female"
     },
     {
         "_id": "623853b2578e9e6ad1ae0dd5",
@@ -13,7 +13,7 @@
         "picture": "https://render.fineartamerica.com/images/rendered/default/t-shirt/23/30/images/artworkimages/medium/1/coffee-coding-syntax-aadil-farooq-transparent.png?targetx=0&targety=0&imagewidth=430&imageheight=516&modelwidth=430&modelheight=575",
         "name": "Keep Coding",
         "price": 27,
-        "gender": "Keep Coding"
+        "gender": "male"
     },
     {
         "_id": "623853b21fb149d2ee7b76c7",

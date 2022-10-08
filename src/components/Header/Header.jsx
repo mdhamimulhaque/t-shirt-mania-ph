@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <header>
             <div className="logo">
-                <h2>Logo</h2>
+                <h2>T-shirt Mania-ph</h2>
             </div>
             <nav className='nav_wrapper'>
                 {
