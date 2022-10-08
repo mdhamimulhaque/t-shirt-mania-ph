@@ -6,8 +6,17 @@
     box-shadow: 2px 3px 4px 4px #bab4b4;
     margin: 20px;
     padding: 0 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .tShirt_box img {
     width: 200px;
     object-fit: cover;
+}
+
+.add_to_cart_btn{
+    cursor: pointer;
 }
