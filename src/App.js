@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import GrandPa from './components/contextLearn/GrandPa/GrandPa';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Orders from './components/Orders/Orders';
@@ -25,6 +26,10 @@ function App() {
         {
           path: "/about",
           element: <About />
+        },
+        {
+          path: "/grandpa",
+          element: <GrandPa />
         }
       ]
     },
