@@ -2,10 +2,19 @@ import React from 'react';
 import "./Cart.css";
 
 const Cart = ({ cart, handleRemoveItem }) => {
+
+    let message;
+    if (cart.length === 0) {
+        message = <p>No Items...!!!</p>
+    }
+
     return (
         <div>
             <h2>Order Summery</h2>
             <h4>Order Items : {cart.length}</h4>
+            {
+                message
+            }
             {
                 cart.map(tShirt => {
                     return (
